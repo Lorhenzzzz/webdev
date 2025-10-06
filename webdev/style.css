@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.container {
+  background: rgba(20, 20, 30, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 370px;
+  box-shadow: 0px 0px 25px rgba(0, 255, 170, 0.6);
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00ffcc;
+  text-shadow: 0px 0px 8px #00ffcc;
+}
+
+.container p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.input {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input label {
+  font-size: 0.9rem;
+  color: #00e6b8;
+  display: block;
+  margin-bottom: 0.3rem;
+  text-shadow: 0px 0px 4px #00ffcc;
+}
+
+.input input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #00ffcc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #111;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff0099;
+  box-shadow: 0px 0px 10px #ff0099;
+}
+.btn{
+  text-decoration: NONE;
+  color: WHITE;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00ffcc, #ff0099);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px #ff0099, 0px 0px 20px #00ffcc;
+}
+
+.switch {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.switch a {
+  color: #00ffcc;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0px 0px 6px #00ffcc;
+}
+
+.switch a:hover {
+  color: #ff0099;
+  text-shadow: 0px 0px 10px #ff0099;
+}
+
+.login {
+  margin-top: 1.5rem;
+}
+
+.login p {
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: white;
+  transition: 0.3s;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+.buttons a.facebook {
+background: #1877f2;
+box-shadow: 0px 0px 12px #1877f2; 
+}
+.buttons a.google { 
+  background: #db4437; 
+  box-shadow: 0px 0px 12px #db4437;
+}
+.buttons a.github { 
+  background: #333; box-shadow: 
+  0px 0px 12px #555; 
+}
+.buttons a.twitter { 
+  background: #1da1f2; 
+  box-shadow: 0px 0px 12px #1da1f2; 
+}
+
+.buttons a:hover {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+  }
+  button, .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .container h2 {
+    font-size: 1.3rem;
+  }
+  .container p {
+    font-size: 0.8rem;
+  }
+  .input-group input {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+  button, .btn {
+    font-size: 0.85rem;
+    padding: 0.7rem;
+  }
+  .social-buttons {
+    gap: 0.6rem;
+  }
+  .social-buttons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
